@@ -1,0 +1,100 @@
+body{
+    margin:0;
+    padding:0;
+
+}
+.container{
+    display:flex;
+}
+.left{
+    height: 100vh;
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.right{
+    height:100vh;
+    width:50%;
+    background-image:linear-gradient(120deg,#159957,#155799);
+}
+
+.logo{
+    background-image: linear-gradient(120deg,#159957,#155799);
+    display:inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-family:montserrat;
+    font-weight:600;
+    font-size:25px;
+    position:absolute;
+    top:100px;
+    left:100px;
+
+}
+.form{
+    height: 60%;
+    background-color: white;
+    width:60%;
+    display:flex;
+    position:relative;
+    top:65px;
+    flex-direction:column;
+    padding:30px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.form .header .create{
+    text-align:center;
+    font-family:montserrat;
+    font-weight:500;
+    display: inline-block;
+    position:fixed;
+    width:47%;
+    top:150px;
+    left:0;
+    padding:20px;
+    background-color:white;
+}
+.form .det{
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    font-family: montserrat;
+    font-weight:520;
+}
+.form .det input{
+    padding:15px;
+    border:0px 0px 10px 0px;
+}
+.form .det select{
+    padding:15px;
+
+}
+
+.submit{
+    background-image: linear-gradient(120deg,#159957,#155799);
+    border-style:none;
+    font-size: 20px;
+    font-family: montserrat;
+    font-weight: 520;
+    color:white;
+}
+option{
+    padding:20px;
+    margin: 10px;;
+    font-size:15px;
+    font-family:montserrat;
+
+}
+option:hover{
+    background-image:linear-gradient(120deg,#159957,#155799);
+}
+.a{
+    background-color: #E9CBA7;
+}
