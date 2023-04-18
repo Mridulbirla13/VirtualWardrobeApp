@@ -70,6 +70,21 @@ body{
     font-family: montserrat;
     font-weight:520;
 }
+.form .det1{
+    padding:10px;
+    display:flex;
+    gap:5px;
+    font-family: montserrat;
+    font-weight:520;
+    justify-content: center;
+    align-items: center;
+}
+.form .det1 a{
+    text-decoration:none;
+    background-image:linear-gradient(120deg,#159957,#155799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
 .form .det input{
     padding:15px;
     border:0px 0px 10px 0px;
