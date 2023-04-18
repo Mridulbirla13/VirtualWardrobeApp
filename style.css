@@ -49,16 +49,18 @@ body{
     display: none;
 }
 .form .header .create{
-    text-align:center;
-    font-family:montserrat;
     font-weight:500;
-    display: inline-block;
-    position:fixed;
-    width:47%;
-    top:150px;
-    left:0;
-    padding:20px;
-    background-color:white;
+}
+.form .header{
+    text-align:center;
+    position: sticky;
+    font-family:montserrat;
+    margin:0px;
+    padding:10px;
+    font-weight: 500;
+    top: -30px;
+    background-color: white;
+
 }
 .form .det{
     padding:10px;
