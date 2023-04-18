@@ -100,3 +100,13 @@ option:hover{
 .a{
     background-color: #E9CBA7;
 }
+.right{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.img{
+    height: 350px;
+    width:auto;
+}
+
