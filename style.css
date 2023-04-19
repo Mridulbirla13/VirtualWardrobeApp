@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Alliance';
+    src: local('Alliance No 2 Regular'), local('Alliance-No-2-Regular'),
+        url('AllianceNo2-Regular.woff2') format('woff2'),
+        url('AllianceNo2-Regular.woff') format('woff'),
+        url('AllianceNo2-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
 body{
     margin:0;
     padding:0;
@@ -217,4 +226,74 @@ input{
     font-family:montserrat;
     font-weight: 520;
    }
+
+   /* Dashboard */
+   .logos{
+    background-image: linear-gradient(120deg,#159957,#155799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-family:montserrat;
+    font-weight:600;
+    font-size:25px;
+    padding:30px;
+
+   }
+   .navbar{
+    display:flex;
+    width:100%;
+    background-color:white;
+    font-family:montserrat;
+    font-weight:530;
+    font-size:20px;
+    justify-content: space-between;
+
+   }
+   .nb{
+    text-decoration:none;
+    padding:30px;
+
+   }
+   .nav{
+    display:flex;
+    background-image: linear-gradient(120deg,#159957,#155799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+   }
+   .containers{
+    background-image:linear-gradient(120deg,#159957,#155799);
+    height: 100vh;
+   }
+   .content{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+   }
+   .head{
+    font-family:montserrat;
+    font-weight:600;
+    color:white;
+    padding:20px;
+    padding-top: 80px;
+    text-align:center;
+    font-size:40px;
+   }
+   .avatar{
+    height:500px;
+    width:500px;
+    background-color: white;
+    border-radius:50%;
+   }
+   .hn{
+    background-color:white;
+    border-radius: 10px;
+    padding:5px;
+   }
+   .as{
+    background-image: linear-gradient(120deg,#159957,#155799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+   }
+
 
