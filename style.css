@@ -253,6 +253,52 @@ input{
     padding:30px;
 
    }
+   .p:hover{
+    background-image:linear-gradient(120deg,#157877,#157679);
+    color: white;
+   }
+   .q:hover{
+    background-image:linear-gradient(120deg,#157679,#15717E);
+    color: white;
+   }
+   .r:hover{
+    background-image:linear-gradient(120deg,#15717E,#156D82);
+    color: white;
+   }
+   .s:hover{
+    background-image:linear-gradient(120deg,#156D82,#156887);
+    color: white;
+   }
+   .t:hover{
+    background-image:linear-gradient(120deg,#156887,#15658A);
+    color: white;
+   }
+   .p{
+    background-image:linear-gradient(120deg,#159957,#155799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    }
+    .q{
+        background-image:linear-gradient(120deg,#159957,#155799);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+    }
+    .r{
+        background-image:linear-gradient(120deg,#159957,#155799);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+    }
+    .s{
+        background-image:linear-gradient(120deg,#159957,#155799);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+    }
+    .t{
+        background-image:linear-gradient(120deg,#159957,#155799);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+    }
+
    .nav{
     display:flex;
     background-image: linear-gradient(120deg,#159957,#155799);
@@ -295,5 +341,193 @@ input{
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
    }
-
+   .head1{
+    font-family:montserrat;
+    font-weight:600;
+    color:white;
+    padding:20px;
+    padding-top: 80px;
+    text-align:center;
+    font-size:40px;
+    height:60%;
+    width:auto;
+   }
+   .content1{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    height: 600px;
+    width:90%;
+    background-color:white;
+    border-radius:10px;
+    overflow-y: scroll;
+    
+   }
+.aisle{
+    display:flex;
+    flex-direction:column;
+    font-family:montserrat;
+    font-weight: 500;
+    padding:20px;
+    
+}
+.headings{
+    padding:30px;
+    padding-left:40px;
+    font-size:20px;
+    background-image: linear-gradient(120deg,#159957,#155799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.products{
+    display:flex;
+    gap:10px;
+}
+.tsrt1{
+    background-image: url(images/T-shirts/4g3ut_400.webp);
+    height: 100px;
+    width:auto;
+}
+.upld{
+    display:flex;
+    font-family:montserrat;
+    justify-content: center;
+    align-items:center;
+    font-weight: 600;    
+}
+.upload{
+    padding:20px;
+    font-size:15px;
+    text-align: center;
+}
+.upld p{
+    background-image: linear-gradient(120deg,#159957,#155799);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+h3{
+    background-image: linear-gradient(120deg,#159957,#155799);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+button {
+    padding: 10px;
+    width: 70px;
+    color: white;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: black;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem;
+  }
+  
+  .app {
+    max-width: 1224px;
+    width: 92%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  
+  .header h2 {
+    min-width: fit-content;
+  }
+  
+  .server-message {
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+  }
+  
+  .input-div {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px dotted black;
+    background-color: white;
+    position: relative;
+  }
+  
+  .input-div .browse {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .file {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .saved-div,
+  .queued-div {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    border-radius: 5px;
+    border: 2px dotted black;
+    background-color: white;
+  }
+  
+  .saved-div .image,
+  .queued-div .image {
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .saved-div .image:nth-child(4n),
+  .queued-div .image:nth-child(4n) {
+    margin-right: 0;
+  }
+  
+  .saved-div .image img,
+  .queued-div .image img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .saved-div .image span,
+  .queued-div .image span {
+    position: absolute;
+    top: -4px;
+    right: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+  }
+  
+  .saved-div .image span:hover,
+  .queued-div .image span:hover {
+    opacity: 0.8;
+  }
+  
+  .saved-div .span--hidden,
+  .queued-div .span--hidden {
+    visibility: hidden;
+  }
 
