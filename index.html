@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup | Virtual Wardrobe</title>
+    <title>Signup | Closet.io</title>
     <link rel = "stylesheet" href = "style.css">
+    <link rel = "icon" href="images/logo.png">
 </head>
 <body>
     <div class="container">
@@ -21,10 +22,15 @@
                     <lable>User Name</lable>
                     <input type="text" placeholder = "Enter User Name">
                 </div>
-                <div class="det">
+                <!-- <div class="det">
                     <lable>Age</lable>
                     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
+                </div> -->
+                <div class="slider">
+                    <lable class="rs">Age</lable>
+                    <input type="range" min="0" max="100" value="10"   oninput="rangeValue.innerText = this.value">
+                    <p id=”rangeValue”>10</p>
+                  </div>
                 <div class="det">
                     <lable>Gender</lable>
                     <select>
@@ -52,24 +58,24 @@
                     <lable>Skin Color</lable>
                     <select>
                         <option value="0">Select Skin Tone:</option>
-                        <option class = "a" value="1"><div class="a">Ivory</div></option>
-                        <option value="2"><div class="b">Porcelain</div></option>
-                        <option value="3"><div class="c">Pale Ivory</div></option>
-                        <option value="4"><div class="d">Warm Ivory</div></option>
-                        <option value="5"><div class="e">Sand</div></option>
-                        <option value="6"><div class="f">Rose Beige</div></option>
-                        <option value="7"><div class="g">Limestone</div></option>
-                        <option value="8"><div class="h">Beige</div></option>
-                        <option value="9"><div class="i">Sienna</div></option>
-                        <option value="10"><div class="j">Honey</div></option>
-                        <option value="11"><div class="k">Band</div></option>
-                        <option value="12"><div class="l">Almond</div></option>
-                        <option value="13"><div class="m">Chestnut</div></option>
-                        <option value="14"><div class="n">Bronze</div></option>
-                        <option value="15"><div class="o">Umber</div></option>
-                        <option value="16"><div class="p">Golden</div></option>
-                        <option value="17"><div class="q">Espresso</div></option>
-                        <option value="18"><div class="r">Chocolate</div></option>
+                        <option class = "a" value="1">Ivory</option>
+                        <option class = "b" value="2">Porcelain</option>
+                        <option class = "c" value="3">Pale Ivory</option>
+                        <option class = "d" value="4">Warm Ivory</option>
+                        <option class = "e" value="5">Sand</option>
+                        <option class = "f" value="6">Rose Beige</option>
+                        <option class = "g" value="7">Limestone</option>
+                        <option class = "h" value="8">Beige</option>
+                        <option class = "i" value="9">Sienna</option>
+                        <option class = "j" value="10">Honey</option>
+                        <option class = "k" value="11">Band</option>
+                        <option class = "l" value="12">Almond</option>
+                        <option class = "m" value="13">Chestnut</option>
+                        <option class = "n" value="14">Bronze</option>
+                        <option class = "o" value="15">Umber</option>
+                        <option class = "p" value="16">Golden</option>
+                        <option class = "q" value="17">Espresso</option>
+                        <option class = "r" value="18">Chocolate</option>
                       </select>
                 </div>
 

@@ -78,6 +78,7 @@ body{
     font-weight:520;
     justify-content: center;
     align-items: center;
+    color:grey;
 }
 .form .det1 a{
     text-decoration:none;
@@ -91,7 +92,8 @@ body{
 }
 .form .det select{
     padding:15px;
-
+    font-family: montserrat;
+    color:grey;
 }
 
 .submit{
@@ -112,9 +114,6 @@ option{
 option:hover{
     background-image:linear-gradient(120deg,#159957,#155799);
 }
-.a{
-    background-color: #E9CBA7;
-}
 .right{
     display: flex;
     justify-content: center;
@@ -124,4 +123,98 @@ option:hover{
     height: 350px;
     width:auto;
 }
+input{
+    font-family:montserrat;
+}
+.a{
+    background-color: #E9CBA7;
+}
+.b{
+    background-color: #EED0B8;
+}
+.c{
+    background-color: #D09E7D;
+}
+.d{
+    background-color: #F7E2AB;
+}
+.e{
+    background-color: #EFC794;
+}
+.f{
+    background-color: #EFC088;
+}
+.g{
+    background-color: #E7BC91;
+}
+.h{
+    background-color: #ECC083;
+}
+.i{
+    background-color: #D09E7D;
+}
+.j{
+    background-color: #CB9662;
+}
+.k{
+    background-color: #AB8B64;
+}
+.l{
+    background-color: #94623D;
+}
+.m{
+    background-color: #885633;
+}
+.n{
+    background-color: #76441F;
+}
+.o{
+    background-color: #B26949;
+}
+.p{
+    background-color: #80492A;
+}
+.q{
+    background-color: #623A17;
+}
+.r{
+    background-color: #301E10;
+}
+.slider {
+    padding:15px;
+    background:white;
+    display:flex;
+    align-items:center;
+    gap:20px;
+   }
+   .slider p {
+    font-size:15px;
+    font-weight:500;
+    font-family: montserrat;
+    color:#7E6D57;
+   }
+   .slider input[type=”range”] {
+    -webkit-appearance:none !important;
+    width:420px;
+    height:2px;
+    background:#7E6D57;
+    border:none;
+    outline:none;
+   }
+   .slider input[type=”range”]::-webkit-slider-thumb {
+    -webkit-appearance:none !important;
+    width:3px;
+    height:30px;
+    background:#fcfcfc;
+    border:2px solid #7E6D57;
+    border-radius:50%;
+    cursor:pointer;
+   }
+   .slider input[type=”range”]::-webkit-slider-thumb:hover {
+    background:#7E6D57;
+   }
+   .rs{
+    font-family:montserrat;
+    font-weight: 520;
+   }
 
