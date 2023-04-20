@@ -36,7 +36,7 @@
                         </div>
                         <div class="input-div">
                             <p>Drag & Drop your Clothes or <span class="browse">Browse</span></p>
-                            <input type="file" class ="file" multiple="multiple" accept="image/png, image/jpeg, image/webp, image/jpg">
+                            <input type="file" class ="file" multiple="multiple" accept="image/png, image/jpeg, image/webp, image/jpg" onchange="previewImage(event)">
                         </div>
                         <form id="saved-form">
                             <div class="header">
@@ -133,8 +133,7 @@
                             serverMessage.style.cssText = "background-color: #f8d7da; color: #b71c1c"
                         })
                        }
-
-
+                       
 
 
                     </script>

@@ -326,8 +326,8 @@ input{
     font-size:40px;
    }
    .avatar{
-    height:500px;
-    width:500px;
+    height:450px;
+    width:450px;
     background-color: white;
     border-radius:50%;
    }
@@ -530,3 +530,17 @@ button {
   .queued-div .span--hidden {
     visibility: hidden;
   }
+
+  .lk{
+    font-family:montserrat;
+    font-weight:600;
+    color:white;
+    padding:20px;
+    padding-top: 80px;
+    text-align:center;
+    font-size:20px;
+  }
+  .lk a{
+    text-decoration: none;
+  }
+ 
