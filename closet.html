@@ -29,16 +29,118 @@
             <div class="head1">Your <span class ="hn"><span class ="as">Closet</span></span></div>
             <div class="content1">
                 <div class="aisle upld">
-                    <p>Drag & Drop your clothes</p>
-                    <input type ="file" class ="upload" accept="image/png, image/jpeg, image/jpg">
-                    <form id="queued-form">
-                        <h3>Preview</h3>
-                        <button type="submit">Upload</button>
-                        <div class="queued-div"></div>
-                    </form>
+                    <main class ="app">
+                        <div class="header">
+                            <h3>Upload Clothes</h3>
+                            <div class="server-message"></div>
+                        </div>
+                        <div class="input-div">
+                            <p>Drag & Drop your Clothes or <span class="browse">Browse</span></p>
+                            <input type="file" class ="file" multiple="multiple" accept="image/png, image/jpeg, image/webp, image/jpg">
+                        </div>
+                        <form id="saved-form">
+                            <div class="header">
+                                <h3>Saved In Server</h3>
+                                <button type="submit">Delete</button>
+                            </div>
+                            <div class="saved-div"></div>
+                        </form>
+                        <form id="queued-form">
+                            <div class="header">
+                                <h3>Preview</h3>
+                                <button type="submit">Upload</button>
+                            </div>
+                            <div class="queued-div"></div>
+                        </form>
+                    </main>
+
+                    <script>
+                        let queuedImagesArray=[],
+                        savedForm = document.querySelector("#saved-form"),
+                        queuedForm = document.querySelector("#queued-form"),
+                        savedDiv = document.querySelector(".saved-div"),
+                        queuedDiv = document.querySelector(".queued-div"),
+                        inputDiv= document.querySelector(".input-div"),
+                        input = document.querySelector(".input-div input"),
+                        serverMessage = document.querySelector(".server-message"),
+                        deleteImages=[];
+
+                        //Saved in Server Images
+
+                        //Preview Images
+                       input.addEventListener("change",() =>{
+                        const files = input.files
+                        for(let i =0;i< files.length; i++){
+                            queuedImagesArray.push(files[i])
+                        }
+                        queuedForm.reset()
+                        displayQueuedImages()
+                       })
+
+                       inputDiv.addEventListener("drop",(e) =>{
+                        e.preventDefault()
+                        const files = e.dataTransfer.files
+                        for(let i = 0; i<files.length; i++){
+                            if(!files[i].type.match("image")) continue
+
+                            if(queuedImagesArray.every(image => image.name !== files[i].name))
+                                queuedImagesArray.push(files[i])
+                        }
+                        displayQueuedImages()
+                       })
+
+                       function displayQueuedImages(){
+                        let images = ""
+                        queuedImagesArray.forEach((image, index) => {
+                            images += `<div class="image">
+                                        <img src="${URL.createObjectURL(image)}" alt="image">
+                                        <span onclick ="deleteQueuedImage(${index})">&times;</span>
+                                       </div>`
+
+                        })
+                        queuedDiv.innerHTML = images
+                       }
+
+                       function deleteQueuedImage(index){
+                        queuedImagesArray.splice(index, 1)
+                        displayQueuedImages()
+                       }
+
+                       queuedForm.addEventListener("submit", (e) =>{
+                        e.preventDefault()
+                        sendQueuedImagesToServer()
+                       })
+
+                       function sendQueuedImagesToServer(){
+                        const formData = new FormData(queuedForm)
+
+                        queuedImagesArray.forEach((image, index) =>{
+                            formData.append(`file[${index}]`,image)
+                        })
+
+                        fetch("upload", {
+                            method: "POST",
+                            body: formData
+                        })
+
+                        .then(response => {
+                            if(response.status !== 200) throw Error(response.statusText)
+                            location.reload()
+                        })
+
+                        .catch(error =>{
+                            serverMessage.innerHTML = error
+                            serverMessage.style.cssText = "background-color: #f8d7da; color: #b71c1c"
+                        })
+                       }
+
+
+
+
+                    </script>
                 </div>
                 <div class="aisle">
-                    <div class="headings">Topwear</div>
+                    <div class="headings"><h3>Topwear</h3></div>
                     <div class="products">
                         <div class="tsrt g"></div>
                         <div class="tsrt h"></div>
@@ -48,7 +150,7 @@
                     </div>
                 </div>
                 <div class="aisle">
-                    <div class="headings">Bottomwear</div>
+                    <div class="headings"><h3>Bottomwear</h3></div>
                     <div class="products">
                         <div class="tsrt g"></div>
                         <div class="tsrt h"></div>
@@ -58,7 +160,7 @@
                     </div>
                 </div>
                 <div class="aisle">
-                    <div class="headings">Footwear</div>
+                    <div class="headings"><h3>Footwear</h3></div>
                     <div class="products">
                         <div class="tsrt g"></div>
                         <div class="tsrt h"></div>
@@ -68,7 +170,7 @@
                     </div>
                 </div>
                 <div class="aisle">
-                    <div class="headings">Accessories</div>
+                    <div class="headings"><h3>Accessories</h3></div>
                     <div class="products">
                         <div class="tsrt g"></div>
                         <div class="tsrt h"></div>
