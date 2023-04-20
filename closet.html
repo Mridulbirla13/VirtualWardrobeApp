@@ -28,32 +28,6 @@
         <div class="content">
             <div class="head1">Your <span class ="hn"><span class ="as">Closet</span></span></div>
             <div class="content1">
-                <div class="aisle upld">
-                    <main class ="app">
-                        <div class="header">
-                            <h3>Upload Clothes</h3>
-                            <div class="server-message"></div>
-                        </div>
-                        <div class="input-div">
-                            <p>Drag & Drop your Clothes or <span class="browse">Browse</span></p>
-                            <input type="file" class ="file" multiple="multiple" accept="image/png, image/jpeg, image/webp, image/jpg" onchange="previewImage(event)">
-                        </div>
-                        <form id="saved-form">
-                            <div class="header">
-                                <h3>Saved In Server</h3>
-                                <button type="submit">Delete</button>
-                            </div>
-                            <div class="saved-div"></div>
-                        </form>
-                        <form id="queued-form">
-                            <div class="header">
-                                <h3>Preview</h3>
-                                <button type="submit">Upload</button>
-                            </div>
-                            <div class="queued-div"></div>
-                        </form>
-                    </main>
-
                     <script>
                         let queuedImagesArray=[],
                         savedForm = document.querySelector("#saved-form"),
@@ -137,46 +111,113 @@
 
 
                     </script>
-                </div>
                 <div class="aisle">
                     <div class="headings"><h3>Topwear</h3></div>
-                    <div class="products">
-                        <div class="tsrt g"></div>
-                        <div class="tsrt h"></div>
-                        <div class="tsrt i"></div>
-                        <div class="tsrt j"></div>
-                        <div class="tsrt k"></div>
-                    </div>
+                    <main class ="app">
+                        <div class="header">
+                            <h3>Upload Topwear</h3>
+                            <div class="server-message"></div>
+                        </div>
+                        <div class="input-div">
+                            <p>Drag & Drop your Topwear or <span class="browse">Browse</span></p>
+                            <input type="file" class ="file" multiple="multiple" accept="image/png, image/jpeg, image/webp, image/jpg" onchange="previewImage(event)">
+                        </div>
+                        <form id="saved-form">
+                            <div class="header">
+                                <h3>Topwear</h3>
+                                <button type="submit">Delete</button>
+                            </div>
+                            <div class="saved-div"></div>
+                        </form>
+                        <form id="queued-form">
+                            <div class="header">
+                                <h3>Preview</h3>
+                                <button type="submit">Upload</button>
+                            </div>
+                            <div class="queued-div"></div>
+                        </form>
+                    </main>
                 </div>
                 <div class="aisle">
                     <div class="headings"><h3>Bottomwear</h3></div>
-                    <div class="products">
-                        <div class="tsrt g"></div>
-                        <div class="tsrt h"></div>
-                        <div class="tsrt i"></div>
-                        <div class="tsrt j"></div>
-                        <div class="tsrt k"></div>
-                    </div>
+                    <main class ="app">
+                        <div class="header">
+                            <h3>Upload Bottomwear</h3>
+                            <div class="server-message"></div>
+                        </div>
+                        <div class="input-div">
+                            <p>Drag & Drop your Bottomwear or <span class="browse">Browse</span></p>
+                            <input type="file" class ="file" multiple="multiple" accept="image/png, image/jpeg, image/webp, image/jpg" onchange="previewImage(event)">
+                        </div>
+                        <form id="saved-form">
+                            <div class="header">
+                                <h3>Bottomwear</h3>
+                                <button type="submit">Delete</button>
+                            </div>
+                            <div class="saved-div"></div>
+                        </form>
+                        <form id="queued-form">
+                            <div class="header">
+                                <h3>Preview</h3>
+                                <button type="submit">Upload</button>
+                            </div>
+                            <div class="queued-div"></div>
+                        </form>
+                    </main>
                 </div>
                 <div class="aisle">
                     <div class="headings"><h3>Footwear</h3></div>
-                    <div class="products">
-                        <div class="tsrt g"></div>
-                        <div class="tsrt h"></div>
-                        <div class="tsrt i"></div>
-                        <div class="tsrt j"></div>
-                        <div class="tsrt k"></div>
-                    </div>
+                    <main class ="app">
+                        <div class="header">
+                            <h3>Upload Footwear</h3>
+                            <div class="server-message"></div>
+                        </div>
+                        <div class="input-div">
+                            <p>Drag & Drop your Footwear or <span class="browse">Browse</span></p>
+                            <input type="file" class ="file" multiple="multiple" accept="image/png, image/jpeg, image/webp, image/jpg" onchange="previewImage(event)">
+                        </div>
+                        <form id="saved-form">
+                            <div class="header">
+                                <h3>Footwear</h3>
+                                <button type="submit">Delete</button>
+                            </div>
+                            <div class="saved-div"></div>
+                        </form>
+                        <form id="queued-form">
+                            <div class="header">
+                                <h3>Preview</h3>
+                                <button type="submit">Upload</button>
+                            </div>
+                            <div class="queued-div"></div>
+                        </form>
+                    </main>
                 </div>
                 <div class="aisle">
                     <div class="headings"><h3>Accessories</h3></div>
-                    <div class="products">
-                        <div class="tsrt g"></div>
-                        <div class="tsrt h"></div>
-                        <div class="tsrt i"></div>
-                        <div class="tsrt j"></div>
-                        <div class="tsrt k"></div>
-                    </div>
+                    <main class ="app">
+                        <div class="header">
+                            <h3>Upload Clothes</h3>
+                            <div class="server-message"></div>
+                        </div>
+                        <div class="input-div">
+                            <p>Drag & Drop your Accessories or <span class="browse">Browse</span></p>
+                            <input type="file" class ="file" multiple="multiple" accept="image/png, image/jpeg, image/webp, image/jpg" onchange="previewImage(event)">
+                        </div>
+                        <form id="saved-form">
+                            <div class="header">
+                                <h3>Accessories</h3>
+                                <button type="submit">Delete</button>
+                            </div>
+                            <div class="saved-div"></div>
+                        </form>
+                        <form id="queued-form">
+                            <div class="header">
+                                <h3>Preview</h3>
+                                <button type="submit">Upload</button>
+                            </div>
+                            <div class="queued-div"></div>
+                        </form>
+                    </main>
                 </div>
             </div>
         </div>

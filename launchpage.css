@@ -62,4 +62,23 @@ body{
     text-decoration: none;
     margin:10px;
   }
+ .dsbrd{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+ }
+ .lk1{
+    font-family:montserrat;
+    font-weight:600;
+    color:white;
+    padding:20px;
+    padding-top: 35px;
+    text-align:center;
+    font-size:20px;
+  }
+  .lk1 a{
+    text-decoration: none;
+    margin:10px;
+  }
  
