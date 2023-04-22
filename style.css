@@ -555,8 +555,59 @@ button {
     background-image: linear-gradient(120deg,#159957,#155799);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
-    padding:40px;
-    font-size:17px;
-    text-align: justify;
+    padding:50px;
+    font-size:20px;
+    text-align: center;
+
+  }
+  .alpha{
+    width:100%;
+    background-color: white;
+    height: 400px;
+    display:flex;
+    justify-content: space-around;
+    gap:10px;
+    padding:10px;
+    margin-bottom:30px;
+  }
+  .alpha1 .beta{
+    width:100%;
+    height: 400px;
+    border-radius: 30px;
+    background-image: linear-gradient(120deg,#159957,#155799);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    display: flex;
+    flex-direction: column;
+  }
+  .beta1{
+    width:100%;
+    background-color: #CCE3E1;
+    height: 400px;
+    border-radius: 30px;
+
+  }
+  .alpha1{
+    width:22%;
+    background-color: #157C73;
+    height: 420px;
+    border-radius: 30px;
+  }
+.mr{
+    height: 200px;
+    padding: 0px 20px;
+}
+.w{
+    font-size:18px;
+    padding:15px;
+}
+.alpha2{
+    width:100%;
+    background-color: white;
+    height: 400px;
+    display:flex;
+    gap:40px;
+    padding:10px;
+    justify-content: center;
   }
  
